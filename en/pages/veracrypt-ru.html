@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://files.stork-search.net/basic.css">
+    <script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+    <script src="/theme/menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/theme/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/theme/styles/variables.css">
+    <link rel="stylesheet" href="/theme/styles/main.css">
+    <link rel="stylesheet" href="/theme/styles/article.css">
+    <link rel="stylesheet" href="/theme/styles/pagination.css">
+    <link rel="stylesheet" href="/theme/styles/join-form.css">
+    <link rel="stylesheet" href="/theme/styles/stork-search.css">
+    <link rel="stylesheet" href="/theme/styles/header.css">
+    <link rel="stylesheet" href="/theme/styles/footer.css">
+    <link rel="stylesheet" href="/theme/styles/mobile-menu.css">
+    <link rel="stylesheet" href="/theme/styles/section.css">
+    <link rel="stylesheet" href="/theme/styles/card.css">
+    <link rel="stylesheet" href="/theme/styles/languages-list.css">
+    <link rel="stylesheet" href="/theme/styles/main-news.css">
+    <link rel="stylesheet" href="/theme/styles/tags.css">
+    <title>VeraCrypt  · Marxunion
+</title>
+</head>
+<body>
+<header>
+    <a href="https://marxunion.github.io/en" aria-label="Home"><img src="/theme/icons/logoSM.svg" class="logo" alt="Marxunion"></a>
+    <a href="https://marxunion.github.io/en" aria-label="Home"><img src="/theme/icons/logoSMblack.svg" class="logomob" alt="Marxunion"></a>
+    <label class="menu-toggle" for="mobile-menu-toggle">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </label>
+    <input type="checkbox" id="mobile-menu-toggle">
+    <div class="menu">
+        <nav>
+            <ul class="menu-items-list">
+                <li><a href="https://marxunion.github.io/en">News</a></li>
+                <li><a href="https://marxunion.github.io/en/documents.html">Documents</a></li>
+                <li><a href="https://marxunion.github.io/en/campaigns.html">Campaigns</a></li>
+                <li><a href="https://marxunion.github.io/en/courses.html">Courses</a></li>
+                <li><a href="https://marxunion.github.io/en/join.html">Join</a></li>
+            </ul>
+            <div class="languages-list-wrapper mobile">
+    <div class="languages-list">
+        <a href="/" class="language-item ">рус</a>
+        <a href="https://marxunion.github.io/en" class="language-item active">eng</a>
+    </div>
+</div>
+
+        </nav>
+    </div>
+    <div class="mobile-background"></div>
+    <div class="stork-wrapper">
+        <div class="stork-input-wrapper">
+            <input data-stork="site-search" class="stork-input" placeholder="Search"/>
+        </div>
+        <div data-stork="site-search-output" class="stork-output"></div>
+    </div>
+    <div class="languages-list-wrapper desktop">
+    <div class="languages-list">
+        <a href="/" class="language-item ">рус</a>
+        <a href="https://marxunion.github.io/en" class="language-item active">eng</a>
+    </div>
+</div>
+
+</header>
+<div class="block-and-footer-wrapper">
+<ul class="breadcrumb">
+  <li><a href="https://marxunion.github.io/en/" title="Marxunion">
+    <i class="fa fa-home fa-lg"></i>
+  </a></li>
+      
+    <li><a href="https://marxunion.github.io/en/"></a></li>
+
+  <li class="active">VeraCrypt</li>
+</ul>
+
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="https://marxunion.github.io/en/pages/veracrypt-ru.html"> VeraCrypt  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span8 article-content">
+        <div class="admonition important">
+<p class="admonition-title">Дисклеймер</p>
+<p>Эта инструкция была скопирована <a href="https://veracrypt.ru/veracrypt-polnoe-shifrovanie-sistemnogo-diska-windows-7">отсюда</a> с целью повышения ее доступности, т.к. исходный сайт не всегда открывается. Хотя она написана для Windows 7 (<a href="/pages/security-updates.html">который использовать уже нельзя</a>), сам VeraCrypt не изменился и должен работать так же в актуальных версиях Windows.</p>
+</div>
+<h3 id="windows-7">Подготовка к шифрованию системного диска Windows 7<a class="headerlink" href="#windows-7" title="Permanent link">&para;</a></h3>
+<p>Вначале установите VeraCrypt. Скачать его можно по <a href="https://launchpad.net/veracrypt/trunk/1.23/+download/VeraCrypt Setup 1.23-Hotfix-2.exe">этой ссылке</a>.</p>
+<p>Запустите VeraCrypt. Вы увидите главное окно программы:</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-2.png"></p>
+<p>В меню «Система» выберите пункт «Зашифровать системный раздел/диск».</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-3.png"></p>
+<p>В качестве типа шифрования системы установите «Обычный». В этом случае вы установите только один основной пароль для шифрования диска. В случае, если вы выберете «Скрытый» тип шифрования системы, вам предстоит установить два пароля – основной и подложный, который будет использоваться для расшифрования диска-обманки.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-4.png"></p>
+<p>В опции «Область шифрования» выберите «Зашифровать весь диск». В этом случае VeraCrypt зашифрует весь диск, а не только лишь системный раздел с установленной Windows.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-5.png"></p>
+<p>На вопрос о «Шифровании защищённой области» ответьте «Нет».</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-6.png"></p>
+<p>Если у вас всего одна операционная система на диске, укажите опцию «Одиночная загрузка» на следующем шаге. В случае, если у вас на диске установлено несколько операционных систем, укажите опцию «Мультизагрузка».</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-7.png"></p>
+<h3 id="_1">Выбор алгоритма шифрования и хеширования<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>На шаге «Настройки шифрования» вы можете выбрать желаемый алгоритм шифрования и хеширования, которые будут применяться при шифровании и дешифровании данных программой VeraCrypt. Рекомендуем оставить значения по умолчанию:</p>
+<ul>
+<li><em>Алгоритм шифрования</em>: <strong>AES</strong></li>
+<li><em>Алгоритм хеширования</em>: <strong>SHA-256</strong></li>
+</ul>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-8.png"></p>
+<p>Если же вы хотите проверить возможность использования различных алгоритмов, нажмите на кнопку «Проверить» и затем «Автотест всех». Сообщение «Тест всех алгоритмов пройден» будет означать, что ваша конфигурация компьютера успешно работает со всеми алгоритмами и вы свободно можете выбрать любой из них.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-9.png"></p>
+<p>В случае, если вы хотите сравнить скороть работы различных алгоритмов в VeraCrypt, Нажмите на кнопку «Тест» и в появившемся окне нажмите ещё раз «Тест». Через некоторое время вы увидите сравнительную таблицу с результатами работы различных алгоритмов. Рекомендуем вам выбрать наиболее быстрый из них (обычно это AES).</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-10.png"></p>
+<p>Определившись с алгоритмом шифрования и алгоритмом хеширования, нажмите «Далее»:</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-11.png"></p>
+<p>На следующем шаге вам потребуется установить пароль. Этот пароль будет использоваться сразу после включения компьютера и после загрузки BIOS. Придумайте пароль достаточной длины, который будет сложно подобрать, но который вы сможете запомнить. Максимальная длина пароля – 64 символа. Рекомендуется указать пароль длиной минимум 20 символов.</p>
+<h3 id="_2">Установка пароля дешифрования<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-12.png"></p>
+<p>После того, как вы определились с паролем, нажмите кнопку «Далее»:</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-13.png"></p>
+<p>В случае, если длина указанного вами пароля составляет менее 20 символов, вы увидите предупреждение, которое напоминает вам о важности длинных и надёжный паролей:</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-14.png"></p>
+<p>На следующем шаге вам потребуется двигать мышью, чтобы на основе движений курсора VeraCrypt генерировала случайные данные для своей работы. Вы сейчас – Генератор случайных чисел!</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-15.png"></p>
+<p>Далее VeraCrypt запишет свой загрузчик на системный диск Windows. Подтвердите данное действие.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-16.png"></p>
+<p>После этого VeraCrypt подтвердит, что успешно сгенерировались ключи. Нажмите «Далее».</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-17.png"></p>
+<h3 id="veracrypt">Диск восстановления VeraCrypt<a class="headerlink" href="#veracrypt" title="Permanent link">&para;</a></h3>
+<p>Далее VeraCrypt предложит вам создать диск восстановления. Он может понадобиться вам в случае, если вы не можете стандартно запустить свой компьютер из-за проблем с VeraCrypt.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-18.png"></p>
+<p>VeraCrypt создаст диск восстановления по указанному вами пути. Для большей надёжности рекомендуется записать образ этого диска на сменный носитель (для хранения) либо сразу же записать данные этого образа, создав тем самым диск восстановления для форс-мажорных ситуаций.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-19.png"></p>
+<p>VeraCrypt сообщит вам, что если вы ранее создавали диск восстановления для этого системного диска, то им нельзя будет воспользоваться ввиду того, что теперь используются заново сгенерированные мастер-ключи.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-20.png"></p>
+<p>На следующем шаге VeraCrypt предложит вам один из вариантов очистки системного диска. Если вам критично недопустить потенциальую утечку своих данных с помощью физического восстановления секторов диска, выберите нужный режим очистки. В большинстве же случаев вам не нужно указывать очистку и вы сможете сэкономить много времени.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-21.png"></p>
+<h3 id="-">Пре-тест шифрования данных<a class="headerlink" href="#-" title="Permanent link">&para;</a></h3>
+<p>На следующем шаге VeraCrypt предложит вам произвести тест конфигурации. Будет установлен загрузчик VeraCrypt, компьютер перезагрузится и вам нужно будет ввести ваш пароль. После этого начнётся запуск Windows.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-22.png"></p>
+<p>Загрузчик VeraCrypt имеет интерфейс на английском языке. После перезагрузки компьютера вы увидите лишь английский текст.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-23.png"></p>
+<p>Перед перезагрузкой системы вам будет показана подробная инструкция. Рекомендуем вам прочитать её и по возможности распечатать.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-24.png"></p>
+<p>Последнее подтверждение перед перезагрузкой.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-25.png"></p>
+<p>После того, как ваш компьютер перезагрузится, вы увидите интерфейс загрузчика VeraCrypt. Он будет целиком на английском, но не волнуйтесь, мы расскажев вам, что делать дальше.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-26.png"></p>
+<p>Надпись «Enter password» гласит «Введите пароль». Укажите свой пароль. Также, вы можете нажать F5 для того, чтобы убрать маскирование пароля и увидеть его целиком.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-27.png"></p>
+<p>После того, как вы ввели свой пароль, нажмите клавишу Enter. Далее VeraCrypt запросит у вас PIM. Просто нажмите Enter ещё раз. После этого последует проверка пароля и дешифрование системного диска Windows.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-28.png"></p>
+<p>Если вы указали правильный пароль и VeraCrypt успешно дешифровала данные системного диска, вы увидите логотип загружающейся Windows. После того, как Windows загрузится, будет показано окно VeraCrypt с сообщением, что пре-тест успешно выполнен. Теперь можно переходить к шифрованию всех данных на системном диске.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-31.png"></p>
+<p>Нажмите кнопку «Шифрация» для старта шифрования всех данных на системном диске.</p>
+<h3 id="_3">Начало шифрования данных на системном диске<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Перед тем, как начать шифрование данных на системном диске Windows 7, VeraCrypt в целях предосторожности снова предложит вам прочитать и распечатать инструкцию.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-32.png"></p>
+<p>Разрешите VeraCrypt изменения на диске.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-33.png"></p>
+<p>Теперь начнётся процесс шифрования всех файлов на системном диске Windows. Скорость шифрования зависит от мощности вашего процессора и типа диска (SSD или HDD), а общее время обработки – от количества данных на диске. Обратите внимание, что вы можете приостановить шифрование данных и продолжить его позже.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-35.png"></p>
+<h3 id="windows-7_1">Системный диск Windows 7 зашифрован!<a class="headerlink" href="#windows-7_1" title="Permanent link">&para;</a></h3>
+<p>После того, как пройдёт какое-то время и системный диск будет успешно зашифрован, вы увидите соответсвующее сообщение.</p>
+<p><img alt="screenshot" src="https://marxunion.github.io/en/pages/windows7-37.png"></p>
+<p>Поздравляем, вы только что зашифровали системный диск Windows с помощью программы VeraCrypt! Вы можете закрыть программу и продолжать пользоваться Windows. Держите свой пароль в тайне от других и никому его не сообщайте.</p>
+    </div>
+</div>
+</article>
+
+    <div class="footer-wrapper">
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@MarxUnion"><img src="/theme/icons/logo_youtube.svg" alt="Youtube"></a>
+                <a href="https://vk.com/marx_union"><img src="/theme/icons/logo_vk.svg" alt="VK"></a>
+                <a href="https://t.me/marx_union"><img src="/theme/icons/logo_tele.svg" alt="Telegram"></a>
+                <a href="#"><img src="/theme/icons/logo_fb.svg" alt="Facebook"></a>
+                <a href="#"><img src="/theme/icons/logo_twit.svg" alt="Twitter"></a>
+                <a href="#"><img src="/theme/icons/logo_inst.svg" alt="Instagram"></a>
+            </div>
+            <div class="footer-logo">Marxunion</div>
+            <div></div>
+        </footer>
+    </div>
+</div>
+
+<script src="https://files.stork-search.net/releases/v1.6.0/stork.js"></script>
+<script>
+    stork.register("site-search", "https://marxunion.github.io/en/search-index.st")
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.section .list-of-tags {
+    margin-top: 50px;
+}
+
+.tag-articles {
+    margin-top: 60px;
+}
+
+.tag-articles h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tag-articles a {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--sm-gray);
+    margin-bottom: 10px;
+    display: block;
+}

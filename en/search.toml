@@ -1,0 +1,10 @@
+[input]
+base_directory = "."
+url_prefix = ""
+stemming = "Russian"
+html_selector = "main"
+
+[[input.files]]
+path = "content/pages/documents/manifesto/en.md"
+url = "/pages/manifesto.html"
+title = "Манифест «Союза марксистов»"

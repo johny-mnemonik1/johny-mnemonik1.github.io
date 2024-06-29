@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.pagination a {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--sm-red);
+}
+
+.pagination a svg {
+    fill: var(--sm-red);
+}
+
+.pagination a.disabled {
+    color: var(--disabled);
+    cursor: not-allowed;
+}
+
+.pagination a.disabled svg {
+    fill: var(--disabled);
+}
+
+.pagination svg {
+    font-size: 28px;
+}

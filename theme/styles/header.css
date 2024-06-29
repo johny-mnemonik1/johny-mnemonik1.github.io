@@ -1,0 +1,72 @@
+header {
+    background: var(--sm-red);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+.logomob {
+    display: none;
+}
+
+.menu-toggle {
+    display: none; /* По умолчанию скрываем кнопку меню */
+}
+
+.bar {
+    height: 2px;
+    background-color: var(--white);
+    margin: 3px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 1.25em;
+}
+
+nav ul li a {
+    font-size: 1em;
+    color: var(--white);
+}
+
+nav ul li a:hover {
+    color: var(--active-desktop);
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        background: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logomob {
+        display: block;
+        width: 40px;
+    }
+
+    .menu-toggle {
+        order: 2;
+        display: block; /* Показываем иконку "гамбургер" */
+    }
+}

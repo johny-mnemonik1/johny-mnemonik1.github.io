@@ -1,0 +1,325 @@
+[input]
+base_directory = "."
+url_prefix = ""
+stemming = "Russian"
+html_selector = "main"
+
+[[input.files]]
+path = "content/pages/courses/marxism/1.md"
+url = "/pages/marxism1.html"
+title = "Тема №1. \\\"Труд\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/10.md"
+url = "/pages/marxism10.html"
+title = "Тема №10. \\\"Политическая надстройка\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/11.md"
+url = "/pages/marxism11.html"
+title = "Тема №11. \\\"Природа идеологии\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/12.md"
+url = "/pages/marxism12.html"
+title = "Тема №12. \\\"Коммунистическая партия\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/13.md"
+url = "/pages/marxism13.html"
+title = "Тема №13. \\\"Течения социалистической мысли\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/2.md"
+url = "/pages/marxism2.html"
+title = "Тема №2. \\\"Способы производства\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/3.md"
+url = "/pages/marxism3.html"
+title = "Тема №3. \\\"Капиталистический способ производства и товарность\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/4.md"
+url = "/pages/marxism4.html"
+title = "Тема №4. \\\"Деньги и превращение денег в капитал\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/5.md"
+url = "/pages/marxism5.html"
+title = "Тема №5. \\\"Кругооборот капитала. Монополизация. Финанциализация. Рента\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/6.md"
+url = "/pages/marxism6.html"
+title = "Тема №6. \\\"Капитал и классовая борьба\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/7.md"
+url = "/pages/marxism7.html"
+title = "Тема №7. \\\"Классы, государство и революция\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/8.md"
+url = "/pages/marxism8.html"
+title = "Тема №8. \\\"Норма прибыли\\\""
+
+[[input.files]]
+path = "content/pages/courses/marxism/9.md"
+url = "/pages/marxism9.html"
+title = "Тема №9. \\\"Глобальное разделение труда. Империализм\\\""
+
+[[input.files]]
+path = "content/pages/courses/opsec/2fa/ru.md"
+url = "/pages/2fa.html"
+title = "Двухфакторная аутентификация (2FA)"
+
+[[input.files]]
+path = "content/pages/courses/opsec/advanced-browsers/ru.md"
+url = "/pages/advanced-browsers.html"
+title = "Продвинутая модификация браузеров"
+
+[[input.files]]
+path = "content/pages/courses/opsec/advanced-cellular/ru.md"
+url = "/pages/advanced-cellular.html"
+title = "И снова о сотовой связи"
+
+[[input.files]]
+path = "content/pages/courses/opsec/aosp/ru.md"
+url = "/pages/aosp.html"
+title = "Свободные смартфоны"
+
+[[input.files]]
+path = "content/pages/courses/opsec/biometrics/ru.md"
+url = "/pages/biometrics.html"
+title = "Биометрия"
+
+[[input.files]]
+path = "content/pages/courses/opsec/encryption/bitlocker/ru.md"
+url = "/pages/bitlocker.html"
+title = "Включение BitLocker без TPM"
+
+[[input.files]]
+path = "content/pages/courses/opsec/boot-encryption/ru.md"
+url = "/pages/boot-encryption.html"
+title = "Шифрование раздела /boot"
+
+[[input.files]]
+path = "content/pages/courses/opsec/browsers/ru.md"
+url = "/pages/browsers.html"
+title = "Выбор и разделение браузеров"
+
+[[input.files]]
+path = "content/pages/courses/opsec/burners/ru.md"
+url = "/pages/burners.html"
+title = "Одноразовые адреса и телефоны"
+
+[[input.files]]
+path = "content/pages/courses/opsec/cellular/ru.md"
+url = "/pages/cellular.html"
+title = "Сотовая связь"
+
+[[input.files]]
+path = "content/pages/courses/opsec/cloud/ru.md"
+url = "/pages/cloud.html"
+title = "Облачные хранилища"
+
+[[input.files]]
+path = "content/pages/campaigns/courier/ru.md"
+url = "/pages/courier.html"
+title = "Профсоюз Курьер"
+
+[[input.files]]
+path = "content/pages/courses/opsec/cryptocurrencies/ru.md"
+url = "/pages/cryptocurrencies.html"
+title = "Криптовалюты"
+
+[[input.files]]
+path = "content/pages/courses/opsec/doh/ru.md"
+url = "/pages/doh.html"
+title = "DNS-over-HTTPS/TLS"
+
+[[input.files]]
+path = "content/pages/courses/opsec/double-bottom/ru.md"
+url = "/pages/double-bottom.html"
+title = "«Двойное дно»"
+
+[[input.files]]
+path = "content/pages/courses/opsec/email/ru.md"
+url = "/pages/email.html"
+title = "E-mail"
+
+[[input.files]]
+path = "content/pages/courses/opsec/encryption/ru.md"
+url = "/pages/encryption.html"
+title = "Шифрование"
+
+[[input.files]]
+path = "content/pages/courses/opsec/foss/ru.md"
+url = "/pages/foss.html"
+title = "Выбор ПО"
+
+[[input.files]]
+path = "content/pages/courses/opsec/hardware-backdoors/ru.md"
+url = "/pages/hardware-backdoors.html"
+title = "Аппаратные бэкдоры (Intel ME, AMD PSP)"
+
+[[input.files]]
+path = "content/pages/courses/opsec/last/ru.md"
+url = "/pages/last.html"
+title = "Если уже пришли"
+
+[[input.files]]
+path = "content/pages/courses/opsec/linux/ru.md"
+url = "/pages/linux.html"
+title = "Linux"
+
+[[input.files]]
+path = "content/pages/courses/opsec/location/ru.md"
+url = "/pages/location.html"
+title = "Сокрытие локации"
+
+[[input.files]]
+path = "content/pages/courses/opsec/encryption/luks/ru.md"
+url = "/pages/luks.html"
+title = "Включение LUKS при установке Linux"
+
+[[input.files]]
+path = "content/pages/documents/manifesto/ru.md"
+url = "/pages/manifesto.html"
+title = "Манифест «Союза марксистов»"
+
+[[input.files]]
+path = "content/pages/courses/marxism/ru.md"
+url = "/pages/marxism.html"
+title = "Базовый курс по марксистской теории"
+
+[[input.files]]
+path = "content/pages/courses/opsec/messengers/ru.md"
+url = "/pages/messengers.html"
+title = "Мессенжеры"
+
+[[input.files]]
+path = "content/pages/courses/opsec/metadata/ru.md"
+url = "/pages/metadata.html"
+title = "Метаданные файлов"
+
+[[input.files]]
+path = "content/pages/courses/opsec/ru.md"
+url = "/pages/opsec.html"
+title = "Поваренная книга криптомарксиста"
+
+[[input.files]]
+path = "content/pages/documents/orgprinciples/ru.md"
+url = "/pages/orgprinciples.html"
+title = "Организационные принципы «Союза марксистов»"
+
+[[input.files]]
+path = "content/pages/courses/opsec/password-managers/ru.md"
+url = "/pages/password-managers.html"
+title = "Менеджеры паролей"
+
+[[input.files]]
+path = "content/pages/courses/opsec/passwords/ru.md"
+url = "/pages/passwords.html"
+title = "Пароли"
+
+[[input.files]]
+path = "content/pages/courses/opsec/privacy/ru.md"
+url = "/pages/privacy.html"
+title = "Чего не делать"
+
+[[input.files]]
+path = "content/pages/courses/opsec/public-pc/ru.md"
+url = "/pages/public-pc.html"
+title = "Использование общественных компьютеров"
+
+[[input.files]]
+path = "content/pages/internlal/publish/ru.md"
+url = "/pages/publish.html"
+title = "Инструкция для Медиа"
+
+[[input.files]]
+path = "content/pages/campaigns/retail/ru.md"
+url = "/pages/retail.html"
+title = "Ритейл бытовой техники"
+
+[[input.files]]
+path = "content/pages/courses/opsec/search-engines/ru.md"
+url = "/pages/search-engines.html"
+title = "Поисковые системы"
+
+[[input.files]]
+path = "content/pages/courses/opsec/security-updates/ru.md"
+url = "/pages/security-updates.html"
+title = "Обновления безопасности"
+
+[[input.files]]
+path = "content/pages/campaigns/student/ru.md"
+url = "/pages/student.html"
+title = "Профсоюз Студент"
+
+[[input.files]]
+path = "content/pages/courses/opsec/telegram/ru.md"
+url = "/pages/telegram.html"
+title = "Telegram"
+
+[[input.files]]
+path = "content/pages/courses/opsec/tor/ru.md"
+url = "/pages/tor.html"
+title = "Tor"
+
+[[input.files]]
+path = "content/pages/courses/opsec/trackers/ru.md"
+url = "/pages/trackers.html"
+title = "Блокировка трекеров"
+
+[[input.files]]
+path = "content/pages/courses/opsec/u2f/ru.md"
+url = "/pages/u2f.html"
+title = "2FA через U2F вместо TOTP"
+
+[[input.files]]
+path = "content/pages/courses/opsec/encryption/veracrypt/ru.md"
+url = "/pages/veracrypt.html"
+title = "VeraCrypt"
+
+[[input.files]]
+path = "content/pages/courses/opsec/vk/ru.md"
+url = "/pages/vk.html"
+title = "ВКонтакте и другие российские сервисы"
+
+[[input.files]]
+path = "content/pages/courses/opsec/vpn/ru.md"
+url = "/pages/vpn.html"
+title = "VPN"
+
+[[input.files]]
+path = "content/pages/campaigns/wildberries/ru.md"
+url = "/pages/wildberries.html"
+title = "Wildberries"
+
+[[input.files]]
+path = "content/posts/DereviyaOrKommunizm/ru.md"
+url = "/DereviyaOrKommunizm.html"
+title = "Вы за деревья или за коммунизм. О расхожем заблуждении."
+
+[[input.files]]
+path = "content/posts/MezScilloyHaribdoy/ru.md"
+url = "/MezScilloyHaribdoy.html"
+title = "Меж Сциллой и Харибдой споров об СССР"
+
+[[input.files]]
+path = "content/posts/puty_domoy/ru.md"
+url = "/puty_domoy.html"
+title = "Женские протесты: Путь домой"
+
+[[input.files]]
+path = "content/posts/inflation/ru.md"
+url = "/inflation.html"
+title = "И снова об инфляции"
+
+[[input.files]]
+path = "content/posts/afghan/ru.md"
+url = "/afghan.html"
+title = "Как Афганистан доказывает исторический материализм"

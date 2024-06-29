@@ -1,0 +1,39 @@
+.stork-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.stork-wrapper .stork-close-button {
+    color: var(--sm-red);
+    background: var(--white);
+    border: none;
+    margin-bottom: 3px;
+    margin-right: 60px;
+}
+
+.stork-wrapper .stork-input {
+    background: var(--white);
+    border-radius: 10px;
+    height: 35px;
+    box-shadow: none;
+    border: 1px solid var(--sm-red);
+}
+
+.stork-progress {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .stork-wrapper {
+        width: 180px;
+    }
+
+    .stork-wrapper .stork-output {
+        margin-left: 25px;
+        margin-right: 25px;
+        position: fixed;
+        left: 0;
+        width: calc(100vw - 50px);
+        display: flex;
+    }
+}

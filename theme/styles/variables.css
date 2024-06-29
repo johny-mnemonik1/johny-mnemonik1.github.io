@@ -1,0 +1,18 @@
+:root {
+    --sm-red: rgb(142, 20, 20);
+    --sm-brighter-red: rgba(204, 0, 0, 1);
+    --sm-gray: rgba(0, 0, 0, 0.5);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --disabled: rgb(229, 229, 229);
+    --active-desktop: rgba(255, 255, 255, 0.5);
+    --form-input: rgba(238, 237, 237, 1);
+    --mobile-background: rgba(0, 0, 0, 0.4);
+    --box-shadow: rgba(0, 0, 0, 0.22);
+    --footer-border: rgba(0, 0, 0, 0.2);
+    --breadcrumd: rgb(2, 117, 216);
+    --breadcrumd-hover: rgb(1, 68, 126);
+    --mobile-menu-border: rgb(128, 128, 128);
+    --th: rgb(220, 220, 220);
+    --table-border: rgb(190, 190, 190)
+}
