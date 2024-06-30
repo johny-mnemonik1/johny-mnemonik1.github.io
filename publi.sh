@@ -1,3 +1,4 @@
+PATH="/home/tehnolog:$PATH"
 peru sync
 cd theme
 pybabel extract --mapping babel.cfg --output messages.pot ./

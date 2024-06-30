@@ -35,7 +35,7 @@ select.join-form-input {
 .join-form-wrapper form  input[type=submit]{
     border-radius: 10px;
     height: 35px;
-    background-color: var(--sm-brighter-red);
+    background-color: var(--tg-violet);
     border: none;
     color: var(--white);
     font-size: 16px;
@@ -54,7 +54,7 @@ select.join-form-input {
 }
 
 .join-form-message a {
-    color: var(--sm-red);
+    color: var(--tg-violet);
 }
 
 @media (max-width: 800px) {

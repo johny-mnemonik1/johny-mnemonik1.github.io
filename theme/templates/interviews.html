@@ -2,7 +2,7 @@
 {% from 'macros.html' import card with context %}
 
 {% block title %}
-{% trans %}Кампании{% endtrans %} · {{ super() }}
+{% trans %}Интервью и реальные истории{% endtrans %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
@@ -13,8 +13,7 @@
 <main class="section-wrapper">
     <div class="section">
         <div class="section-header-wrapper">
-            <div class="section-header">{% trans %}Кампании{% endtrans %}</div>
-            <div class="section-header-rectangle"></div>
+            <div class="section-header">{% trans %}Интервью и реальные истории{% endtrans %}</div>
         </div>
         <section class="cards">
             {{ card(pages|get("wildberries")) }}

@@ -31,12 +31,18 @@
     <link rel="stylesheet" href="/theme/styles/languages-list.css">
     <link rel="stylesheet" href="/theme/styles/main-news.css">
     <link rel="stylesheet" href="/theme/styles/tags.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
 </head>
 <body>
 {% from 'macros.html' import langlist with context %}
 <header>
-    <a href="{{ SITEURL }}" aria-label="Home"><img src="/theme/icons/logoSM.svg" class="logo" alt="{{ SITENAME }}"></a>
+    <a href="{{ SITEURL }}" aria-label="Home" class="logo">TG HOUSE</a>
     <a href="{{ SITEURL }}" aria-label="Home"><img src="/theme/icons/logoSMblack.svg" class="logomob" alt="{{ SITENAME }}"></a>
     <label class="menu-toggle" for="mobile-menu-toggle">
         <span class="bar1"></span>
@@ -48,11 +54,10 @@
         <nav>
             <ul class="menu-items-list">
                 <li><a href="{{ SITEURL }}">{% trans %}Новости{% endtrans %}</a></li>
-                <li><a href="{{ SITEURL }}/documents.html">{% trans %}Документы{% endtrans %}</a></li>
-                {#<li><a href="#">{% trans %}Позиции{% endtrans %}</a></li>#}
-                <li><a href="{{ SITEURL }}/campaigns.html">{% trans %}Кампании{% endtrans %}</a></li>
-                <li><a href="{{ SITEURL }}/courses.html">{% trans %}Курсы{% endtrans %}</a></li>
-                <li><a href="{{ SITEURL }}/join.html">{% trans %}Вступить{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/transition.html">{% trans %}Т-переход{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/interviews.html">{% trans %}Интервью и реальные истории{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/help.html">{% trans %}Помощь{% endtrans %}</a></li>
+                <li><a href="{{ SITEURL }}/about.html">{% trans %}О нас{% endtrans %}</a></li>
             </ul>
             {{ langlist('mobile') }}
         </nav>
@@ -73,12 +78,11 @@
     <div class="footer-wrapper">
         <footer>
             <div class="social-icons">
-                <a href="https://www.youtube.com/@MarxUnion"><img src="/theme/icons/logo_youtube.svg" alt="Youtube"></a>
-                <a href="https://vk.com/marx_union"><img src="/theme/icons/logo_vk.svg" alt="VK"></a>
-                <a href="https://t.me/marx_union"><img src="/theme/icons/logo_tele.svg" alt="Telegram"></a>
-                <a href="#"><img src="/theme/icons/logo_fb.svg" alt="Facebook"></a>
-                <a href="#"><img src="/theme/icons/logo_twit.svg" alt="Twitter"></a>
-                <a href="#"><img src="/theme/icons/logo_inst.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@TGHouseBelarus><img src="/theme/icons/logo_youtube.svg" alt="Youtube"></a>
+                <a href="https://vk.com/tghousebelarus"><img src="/theme/icons/logo_vk.svg" alt="VK"></a>
+                <a href="https://t.me/tghousebelarus"><img src="/theme/icons/logo_tele.svg" alt="Telegram"></a>
+                <a href="https://www.facebook.com/tghousebelarus"><img src="/theme/icons/logo_fb.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/tghousebelarus/"><img src="/theme/icons/logo_inst.svg" alt="Instagram"></a>
             </div>
             <div class="footer-logo">{{ SITENAME }}</div>
             <div></div>

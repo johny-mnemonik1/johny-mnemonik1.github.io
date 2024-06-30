@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-13 18:19+0200\n"
+"POT-Creation-Date: 2024-06-30 09:33+0200\n"
 "PO-Revision-Date: 2023-07-29 21:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.15.0\n"
 
 #: templates/404.html:4
 msgid "Страница не найдена"
@@ -35,8 +35,17 @@ msgid ""
 "Увы, запрашиваемая вами страница не найдена. Она либо никогда не "
 "существовала, либо была перенесена или удалена."
 msgstr ""
-"На жаль, запитувана вами сторінка не знайдена. Вона або ніколи не"
-"існувала, або була перенесена або видалена."
+"На жаль, запитувана вами сторінка не знайдена. Вона або ніколи "
+"неіснувала, або була перенесена або видалена."
+
+#: templates/about.html:5 templates/about.html:16 templates/base.html:60
+msgid "О нас"
+msgstr ""
+
+#: templates/about.html:9
+#, fuzzy
+msgid "Курсы от"
+msgstr "Курси від"
 
 #: templates/archives.html:4 templates/archives.html:13
 #: templates/archives.html:14 templates/archives.html:29
@@ -64,32 +73,26 @@ msgstr "Наступна стаття"
 msgid "Опубликовано"
 msgstr "Опубліковано"
 
-#: templates/base.html:50 templates/index.html:33
+#: templates/base.html:56 templates/index.html:33
 msgid "Новости"
 msgstr "Новини"
 
-#: templates/base.html:51 templates/documents.html:5
-#: templates/documents.html:16 templates/macros.html:13
-msgid "Документы"
-msgstr "Документи"
+#: templates/base.html:57 templates/macros.html:13 templates/transition.html:5
+#: templates/transition.html:16
+#, fuzzy
+msgid "Т-переход"
+msgstr "Переклади"
 
-#: templates/base.html:53 templates/campaigns.html:5 templates/campaigns.html:9
-#: templates/campaigns.html:16 templates/macros.html:15
-msgid "Кампании"
-msgstr "Кампанії"
+#: templates/base.html:58 templates/interviews.html:5
+#: templates/interviews.html:16
+msgid "Интервью и реальные истории"
+msgstr ""
 
-#: templates/base.html:54 templates/courses.html:5 templates/courses.html:16
-#: templates/macros.html:17
-msgid "Курсы"
-msgstr "Курси"
+#: templates/base.html:59 templates/help.html:4 templates/macros.html:17
+msgid "Помощь"
+msgstr ""
 
-#: templates/base.html:55 templates/join.html:4 templates/join.html:14
-#: templates/join_error.html:4 templates/join_fail.html:4
-#: templates/join_success.html:4
-msgid "Вступить"
-msgstr "Долучитися"
-
-#: templates/base.html:63
+#: templates/base.html:68
 msgid "Поиск"
 msgstr "Пошук"
 
@@ -104,72 +107,78 @@ msgstr "Усі категорії"
 msgid "Все категории в"
 msgstr "Усі категорії в"
 
-#: templates/courses.html:9
+#: templates/help.html:8
 #, fuzzy
-msgid "Курсы от"
-msgstr "Курси від"
+msgid "Заполните эту форму, чтобы получить помощь."
+msgstr "Заповніть цю форму, щоб долучитися до Союзу Марксистів!"
 
-#: templates/documents.html:9
-msgid "Уставные документы"
-msgstr "Статутні документи"
+#: templates/help.html:14
+msgid "Адресная помощь трансгендерным людям 2024"
+msgstr ""
 
-#: templates/index.html:75
+#: templates/help.html:16
+msgid "Имя"
+msgstr ""
+
+#: templates/help.html:17
+msgid "Емэйл"
+msgstr ""
+
+#: templates/help.html:18
+#, fuzzy
+msgid "Telegram"
+msgstr "Ім'я в Telegram"
+
+#: templates/help.html:20
+msgid "Мне необходимо"
+msgstr ""
+
+#: templates/help.html:21
+msgid "Психологическая помощь"
+msgstr ""
+
+#: templates/help.html:22
+msgid "Продудктовый набор"
+msgstr ""
+
+#: templates/help.html:23
+msgid "Компенсация гормональных препаратов"
+msgstr ""
+
+#: templates/help.html:24
+msgid "Другое"
+msgstr ""
+
+#: templates/help.html:26
+msgid "Дополнительная информация"
+msgstr ""
+
+#: templates/help.html:28
+msgid "Отправить"
+msgstr "Надіслати"
+
+#: templates/help.html:31
+msgid "В данный момент мы принимаем только русскоговорящих членов."
+msgstr "Наразі при приймаємо тільки російськомовних членів."
+
+#: templates/index.html:71
 #, fuzzy
 msgid "Предыдущая"
 msgstr "Попередня"
 
-#: templates/index.html:88
+#: templates/index.html:84
 #, fuzzy
 msgid "Следующая"
 msgstr "Наступна"
 
-#: templates/join.html:8
-msgid "Заполните эту форму, чтобы присоединиться к Союзу марксистов!"
-msgstr "Заповніть цю форму, щоб долучитися до Союзу Марксистів!"
+#: templates/interviews.html:9
+msgid "Кампании"
+msgstr "Кампанії"
 
-#: templates/join.html:16
-msgid "Как нам к тебе обращаться?"
-msgstr "Як нам до тебе звертатися?"
-
-#: templates/join.html:18
-msgid "Гендер"
-msgstr "Гендер"
-
-#: templates/join.html:19
-msgid "Не указывать"
-msgstr "Не зазначати"
-
-#: templates/join.html:20
-msgid "Женский"
-msgstr "Жіночий"
-
-#: templates/join.html:21
-msgid "Мужской"
-msgstr "Чоловічий"
-
-#: templates/join.html:23
-msgid "Возраст"
-msgstr "Вік"
-
-#: templates/join.html:24
-msgid "Номер телефона"
-msgstr "Номер телефону"
-
-#: templates/join.html:25
-msgid "Имя в Telegram"
-msgstr "Ім'я в Telegram"
-
-#: templates/join.html:26
-msgid "Город (+ страна, если это не РФ)"
-msgstr "Місто (+ країна, якщо не в РФ)"
-
-#: templates/join.html:27
-msgid "Отправить"
-msgstr "Надіслати"
-
-#: templates/join.html:30
-msgid "В данный момент мы принимаем только русскоговорящих членов."
-msgstr "Наразі при приймаємо тільки російськомовних членів."
+#: templates/join_error.html:4 templates/join_fail.html:4
+#: templates/join_success.html:4
+msgid "Вступить"
+msgstr "Долучитися"
 
 #: templates/join_error.html:8 templates/join_fail.html:8
 msgid "Не удалось отправить заявку на вступление в Союз марксистов..."
@@ -181,7 +190,8 @@ msgid ""
 "Скорее всего, это связано с внутренними проблемами в системах СМ, и "
 "ответственные люди уже об этом знают. Пожалуйста, попробуйте заполнить "
 "форму снова через некоторое время."
-msgstr "За якоюсь причиною надіслати вашу заявку до Союзу марксистів не вдалось. "
+msgstr ""
+"За якоюсь причиною надіслати вашу заявку до Союзу марксистів не вдалось. "
 "Швидше за все, це повязано зі внутрішніми проблемами у системах СМ, й "
 "відповідальні люди про це вже знают. Будь ласка, спробуйте заповнити "
 "форму знову через деякий час."
@@ -211,8 +221,9 @@ msgstr "Заява на вступ до Союзу марксистів успі
 msgid ""
 "Поздравляем, заявка успешно отправлена! В течение недели через Telegram с"
 " тобой свяжутся представители Союза марксистов."
-msgstr "Вітаю, заявка успішно відправлена! Протягом тижня через Telegram з"
-"  тобою з'єднаються представники Союзу маркисистів."
+msgstr ""
+"Вітаю, заявка успішно відправлена! Протягом тижня через Telegram з  тобою"
+" з'єднаються представники Союзу маркисистів."
 
 #: templates/join_success.html:15
 msgid "А до тех пор настоятельно рекомендуем ознакомиться с"
@@ -230,6 +241,10 @@ msgstr "(це все одно потрібно буде зробити)"
 msgid "Переводы"
 msgstr "Переклади"
 
+#: templates/macros.html:15
+msgid "Интервью"
+msgstr ""
+
 #: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
 msgid "Все теги"
 msgstr "Усі теги"
@@ -237,4 +252,38 @@ msgstr "Усі теги"
 #: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
 msgid "Все теги, используемые в"
 msgstr "Усі теги, використані в"
+
+#: templates/transition.html:9
+msgid "Уставные документы"
+msgstr "Статутні документи"
+
+#~ msgid "Документы"
+#~ msgstr "Документи"
+
+#~ msgid "Курсы"
+#~ msgstr "Курси"
+
+#~ msgid "Как нам к тебе обращаться?"
+#~ msgstr "Як нам до тебе звертатися?"
+
+#~ msgid "Гендер"
+#~ msgstr "Гендер"
+
+#~ msgid "Не указывать"
+#~ msgstr "Не зазначати"
+
+#~ msgid "Женский"
+#~ msgstr "Жіночий"
+
+#~ msgid "Мужской"
+#~ msgstr "Чоловічий"
+
+#~ msgid "Возраст"
+#~ msgstr "Вік"
+
+#~ msgid "Номер телефона"
+#~ msgstr "Номер телефону"
+
+#~ msgid "Город (+ страна, если это не РФ)"
+#~ msgstr "Місто (+ країна, якщо не в РФ)"
 

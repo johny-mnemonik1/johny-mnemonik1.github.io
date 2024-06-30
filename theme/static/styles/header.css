@@ -1,5 +1,5 @@
 header {
-    background: var(--sm-red);
+    background: var(--tg-violet);
     height: 80px;
     display: flex;
     justify-content: space-around;
@@ -7,7 +7,10 @@ header {
 }
 
 .logo {
-    width: 80px;
+    text-decoration: underline;
+    font-family: "Quicksand", sans-serif;
+    color: var(--white);
+    font-size: 46px;
 }
 
 .logomob {

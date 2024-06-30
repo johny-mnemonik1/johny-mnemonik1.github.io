@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import card with context %}
+
+{% block title %}
+{% trans %}О нас{% endtrans %}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Курсы от{% endtrans %} {{ SITENAME|striptags|e }}
+{% endblock head_description %}
+
+{% block content %}
+<main class="section-wrapper">
+    <div class="section">
+        <div class="section-header-wrapper">
+            <div class="section-header">{% trans %}О нас{% endtrans %}</div>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <div>
+            Варя
+            </div>
+            <img src="https://static.printler.com/cache/9/b/3/a/1/c/9b3a1c99145ffb54b29cf2cd9ff649915c856b92.jpg" style="    border-radius: 20px;
+            object-fit: cover;
+            object-position: 20% 20%;
+            width: 300px;
+            aspect-ratio: 1;">
+            <div>
+                Занимается помощью и борьбой
+            </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <div>
+            Лера
+            </div>
+            <img src="https://www.familyeducation.com/sites/default/files/styles/max_920w/public/2023-01/102%20Kawaii%20and%20Cute%20Anime%20Girl%20Names%20%28with%20Meanings%29_Feature.jpg" style="    border-radius: 20px;
+            object-fit: cover;
+            object-position: 20% 20%;
+            width: 300px;
+            aspect-ratio: 1;">
+            <div>
+                Главная программистка
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

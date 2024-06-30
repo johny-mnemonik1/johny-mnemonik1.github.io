@@ -14,22 +14,24 @@
     margin-top: 50px;
     align-items: center;
     margin-bottom: 30px;
+    color: var(--white);
+    background-color: var(--tg-violet);
 }
 
 .section-header {
     font-size: 96px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: lighter;
     width: -moz-fit-content;
     width: fit-content;
     margin-right: 10px;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -4px;
 }
 
 .section-header-rectangle {
     width: 100%;
-    background-color: var(--sm-red);
+    background-color: var(--tg-violet);
     height: 73px;
     margin-bottom: 5px;
 }

@@ -2,7 +2,7 @@
 {% from 'macros.html' import card with context %}
 
 {% block title %}
-{% trans %}Документы{% endtrans %} · {{ super() }}
+{% trans %}Т-переход{% endtrans %}
 {% endblock title %}
 
 {% block head_description %}
@@ -13,12 +13,11 @@
 <main class="section-wrapper">
     <div class="section">
         <div class="section-header-wrapper">
-            <div class="section-header">{% trans %}Документы{% endtrans %}</div>
-            <div class="section-header-rectangle"></div>
+            <div class="section-header">{% trans %}Т-переход{% endtrans %}</div>
         </div>
         <section class="cards">
-            {{ card(pages|get("manifesto")) }}
-            {{ card(pages|get("orgprinciples")) }}
+            {{ card(pages|get("vpoiske")) }}
+            {{ card(pages|get("moiperehod5_4")) }}
         </section>
     </div>
 </main>

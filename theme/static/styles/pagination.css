@@ -9,11 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--sm-red);
+    color: var(--tg-violet);
 }
 
 .pagination a svg {
-    fill: var(--sm-red);
+    fill: var(--tg-violet);
 }
 
 .pagination a.disabled {

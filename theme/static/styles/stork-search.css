@@ -4,7 +4,7 @@
 }
 
 .stork-wrapper .stork-close-button {
-    color: var(--sm-red);
+    color: var(--tg-violet);
     background: var(--white);
     border: none;
     margin-bottom: 3px;
@@ -16,7 +16,7 @@
     border-radius: 10px;
     height: 35px;
     box-shadow: none;
-    border: 1px solid var(--sm-red);
+    border: 1px solid var(--tg-violet);
 }
 
 .stork-progress {

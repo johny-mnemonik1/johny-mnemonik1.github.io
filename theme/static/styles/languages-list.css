@@ -47,10 +47,10 @@
     }
 
     .language-item:hover {
-        color: var(--sm-red);
+        color: var(--tg-violet);
     }
 
     .languages-list-wrapper.mobile .language-item.active{
-        color: var(--sm-red);
+        color: var(--tg-violet);
     }
 }

@@ -9,7 +9,7 @@ def get_by_slug(objs, slug):
             return obj
 
 
-SITENAME = "Союз марксистов"
+SITENAME = "TG HOUSE"
 SITESUBTITLE = ""
 AUTHOR = SITENAME
 SITEURL = ""
@@ -34,20 +34,20 @@ LOCALE = "ru_RU"
 
 DIRECT_TEMPLATES = [
     "index",
-    "join",
+    "help",
     "join_success",
     "join_fail",
     "join_error",
-    "documents",
-    "campaigns",
-    "courses",
+    "transition",
+    "interviews",
+    "about",
     "tags",
     "categories",
     "archives",
     "404"
 ]
 
-PAGINATED_TEMPLATES = {"index": 8}
+PAGINATED_TEMPLATES = {"index": 4, "transition": 4 }
 INDEX_SAVE_AS = 'index.html'
 OUTPUT_PATH = 'output'
 CATEGORY_SAVE_AS = ''

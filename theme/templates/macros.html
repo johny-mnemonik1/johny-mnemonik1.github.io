@@ -9,12 +9,12 @@
 
 {% macro parents(page) %}
 {% if not page.parent %}
-{% elif page.parent == 'documents' %}
-    <li><a href="{{ SITEURL }}/documents.html">{% trans %}Документы{% endtrans %}</a></li>
-{% elif page.parent == 'campaigns' %}
-    <li><a href="{{ SITEURL }}/campaigns.html">{% trans %}Кампании{% endtrans %}</a></li>
+{% elif page.parent == 'transition' %}
+    <li><a href="{{ SITEURL }}/transition.html">{% trans %}Т-переход{% endtrans %}</a></li>
+{% elif page.parent == 'interviews' %}
+    <li><a href="{{ SITEURL }}/interviews.html">{% trans %}Интервью{% endtrans %}</a></li>
 {% elif page.parent == 'courses' %}
-    <li><a href="{{ SITEURL }}/courses.html">{% trans %}Курсы{% endtrans %}</a></li>
+    <li><a href="{{ SITEURL }}/help.html">{% trans %}Помощь{% endtrans %}</a></li>
 {% else %}
     {% set parent = pages|get(page.parent) %}
     {{ parents(parent) }}

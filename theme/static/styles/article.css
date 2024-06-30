@@ -15,12 +15,12 @@ article img {
 }
 
 article a {
-    color: var(--sm-red);
+    color: var(--tg-violet);
     cursor: pointer;
 }
 
 article h1 {
-    border-left: 10px solid var(--sm-red);
+    border-left: 10px solid var(--tg-violet);
     font-size: 36px;
     padding-left: 20px;
     margin-top: 40px;
@@ -46,7 +46,7 @@ article img + em {
     margin-bottom: 20px;
     margin-top: 10px;
     display: block;
-    border-left: 2px solid var(--sm-red);
+    border-left: 2px solid var(--tg-violet);
     padding-left: 10px;
     font-size: 16px;
     color: var(--sm-gray);
@@ -84,15 +84,15 @@ article nav ul {
 }
 
 article nav ul li a:hover {
-    color: var(--sm-red);
+    color: var(--tg-violet);
 }
 
 article nav ul li a {
-    color: var(--sm-red);
+    color: var(--tg-violet);
 }
 
 article nav ul li:first-child a {
-    color: var(--sm-red);
+    color: var(--tg-violet);
 }
 
 article h2 a {
@@ -133,7 +133,7 @@ article h5 {
 
 .list-of-tags li {
     border-radius: 10px;
-    background-color: var(--sm-red);
+    background-color: var(--tg-violet);
     height: 40px;
     display: flex;
     justify-content: center;
@@ -218,7 +218,7 @@ article th {
 
 blockquote {
     background: var(--th);
-    border-left: 10px solid var(--sm-red);
+    border-left: 10px solid var(--tg-violet);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
