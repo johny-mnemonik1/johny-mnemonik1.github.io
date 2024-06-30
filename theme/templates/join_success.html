@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Вступить{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Заявка на вступление в Союз марксистов успешно отправлена!{% endtrans %}
+{% endblock head_description %}
+
+{% block content %}
+<div class="join-form-wrapper">
+    <div class="join-form-message">
+        <p>{% trans %}Поздравляем, заявка успешно отправлена! В течение недели через Telegram с тобой свяжутся представители Союза марксистов.{% endtrans %}</p>
+        <p>{% trans %}А до тех пор настоятельно рекомендуем ознакомиться с{% endtrans %} <a href="{{ SITEURL }}/documents.html">{% trans %}уставными документами организации{% endtrans %}</a> {% trans %}(это все равно придется сделать){% endtrans %}.</p>
+    </div>
+</div>
+{% endblock content %}

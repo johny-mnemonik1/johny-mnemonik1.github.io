@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Вступить{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Не удалось отправить заявку на вступление в Союз марксистов...{% endtrans %}
+{% endblock head_description %}
+
+{% block content %}
+<div class="join-form-wrapper">
+    <div class="join-form-message">
+        <p>{% trans %}По какой-то причине отправить вашу заявку в Союз марксистов не удалось. Скорее всего, это связано с внутренними проблемами в системах СМ, и ответственные люди уже об этом знают. Пожалуйста, попробуйте заполнить форму снова через некоторое время.{% endtrans %}</p>
+        <p>{% trans %}А пока можно вернуться на{% endtrans %} <a href="{{ SITEURL }}">{% trans %}главную страницу{% endtrans %}</a>.</p>
+    </div>
+</div>
+{% endblock content %}

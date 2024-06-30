@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Вступить{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Не удалось отправить заявку на вступление в Союз марксистов...{% endtrans %}
+{% endblock head_description %}
+
+{% block content %}
+<div class="join-form-wrapper">
+    <div class="join-form-message">
+        <p>{% trans %}Я не знаю, как, но тебе удалось заполнить форму неправильно.{% endtrans %}</p>
+        <p><a href="{{ SITEURL }}/join.html">{% trans %}Попробуй еще раз{% endtrans %}</a>.</p>
+    </div>
+</div>
+{% endblock content %}

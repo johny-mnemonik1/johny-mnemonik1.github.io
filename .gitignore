@@ -1,0 +1,6 @@
+output/
+.peru/
+plugins/
+themes/
+.idea/
+__pycache__

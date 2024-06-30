@@ -1,0 +1,92 @@
+#mobile-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: none; /* Скрываем список навигации по умолчанию */
+        flex-direction: column; /* Отображаем пункты меню в столбец */
+        background: var(--white);
+        padding: 10px;
+        position: fixed;
+        top: 0; /* Позиционируем меню под кнопкой */
+        left: 0;
+        z-index: 1; /* Устанавливаем z-index, чтобы меню было видимым */
+        width: 60%;
+        height: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Отображаем пункты меню в столбец */
+        margin-top: 2em; /* Увеличиваем расстояние между пунктами меню */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Удаляем правый отступ у пунктов меню */
+        margin-bottom: 1.5em; /* Увеличиваем отступ снизу между пунктами меню */
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid var(--mobile-menu-border);
+        font-size: 1em;
+    }
+
+    .menu-toggle .bar1 {
+        width: 20px;
+    }
+
+    .menu-toggle .bar2 {
+        width: 30px;
+    }
+
+    .menu-toggle .bar3 {
+        width: 15px;
+    }
+
+    .menu-toggle .bar1, .menu-toggle .bar2, .menu-toggle .bar3 {
+        display: block;
+        border-radius: 2px;
+        height: 5px;
+        background-color: var(--black);
+        margin: 5px 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul li a {
+        margin-left: 20px;
+    }
+
+    nav ul li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .mobile-background {
+        right: 0;
+        top: 0;
+        display: none;
+        background-color: var(--mobile-background);
+        width: 9000px;
+        height: 9000px;
+        position: fixed;
+        z-index: 10;
+    }
+
+    #mobile-menu-toggle:checked + .menu {
+        width: 200px;
+        padding: 0;
+        z-index: 11;
+        display:flex;
+    }
+
+    #mobile-menu-toggle:checked + .menu nav ul li a {
+        color: var(--black);
+    }
+
+    #mobile-menu-toggle:checked + .menu + .mobile-background {
+        display: block;
+    }
+}

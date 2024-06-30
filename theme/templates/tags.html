@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Все теги{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Все теги, используемые в{% endtrans %} {{ SITENAME|striptags|e }}.
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="{% trans %}Все теги{% endtrans %} · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="{% trans %}Все теги{% endtrans %} · {{ SITENAME|striptags|e }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL }}" />
+<meta property="og:description" content="{% trans %}Все теги, используемые в{% endtrans %} {{ SITENAME|striptags|e }}" />
+<meta name="twitter:description" content="{% trans %}Все теги, используемые в{% endtrans %} {{ SITENAME|striptags|e }}">
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% if FEATURED_IMAGE %}
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+<main class="section-wrapper">
+    <div class="section">
+        <ul class="list-of-tags">
+            {% for tag, articles in tags|sort %}
+            <li><a href="#{{ tag.slug }}-ref">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+        {% for tag, articles in tags|sort %}
+        <div class="tag-articles">
+            <h2 id="{{ tag.slug }}-ref" class="tag-title">{{ tag }}</h2>
+            <ul>
+                {% for article in articles|sort(reverse = true, attribute = 'date') %}
+                <li itemscope>
+                    <a href="{{ SITEURL }}/{{ article.url }}">
+                        {{ article.title }}
+                        {% if article.subtitle %}
+                        <small class="subtitle">
+                            {{ article.subtitle }}
+                        </small>
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock content %}

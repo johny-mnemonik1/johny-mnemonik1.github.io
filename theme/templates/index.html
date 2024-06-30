@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% from 'macros.html' import card with context %}
+{% from 'macros.html' import left_chevron with context %}
+{% from 'macros.html' import right_chevron with context %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="{{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="{{ SITENAME|striptags|e }}">
+<meta property="og:url" content="{{ SITEURL }}" />
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% if FEATURED_IMAGE %}
+<meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+<meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
+{% endif %}
+{% if SITE_DESCRIPTION %}
+<meta property="og:description" content="{{ SITE_DESCRIPTION|e }}" />
+<meta name="twitter:description" content="{{ SITE_DESCRIPTION|e }}">
+{% endif %}
+<meta name="keywords" content="{% for tag, _ in tags|sort %} {{ tag }}, {% endfor %}{% for category, _ in categories|sort %} {{ category }}, {% endfor %}" />
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+<main class="section-wrapper">
+    <div class="section">
+        <div class="section-header-wrapper">
+            <div class="section-header">{% trans %}Новости{% endtrans %}</div>
+        </div>
+        {# Main article #}
+        {% if articles_page.object_list and not articles_page.has_previous() %}
+        {% set main_article_object = articles_page.object_list[0] %}
+        <section class="main-news">
+            <div class="main-news-text">
+                <div></div>
+                <div>
+                    <a href="{{ SITEURL }}/{{ main_article_object.url }}">
+                        <h1>{{ main_article_object.title }}</h1>
+                    </a>
+                </div>
+                <div class="main-news-summary-wrapper">
+                    <p>{{ main_article_object.summary }}</p>
+                </div>
+            </div>
+            <div class="main-news-image-wrapper">
+                <a href="{{ SITEURL }}/{{ main_article_object.url }}"><img src="{{ main_article_object.cover }}" alt="{{ main_article_object.title }}"></a>
+            </div>
+        </section>
+        {% endif %}
+
+        {# Other articles #}
+        <section class="cards">
+        {% set begin = 0 if articles_page.has_previous() else 1 %}
+        {% if articles_page.object_list|length > begin %}
+        {% for article_object in articles_page.object_list[begin:] %}
+            {{ card(article_object) }}
+        {% endfor %}
+        {% endif %}
+        </section>
+        <div class="pagination">
+            <a {% if articles_page.has_previous() %}
+               href="{{ SITEURL }}/{{ articles_previous_page.url }}"
+               {% else %}
+               class="disabled"
+               {% endif %}>
+                <div  class="button large previous">{% trans %}Предыдущая{% endtrans %}</div>
+                <div>
+                    {{ left_chevron() }}
+                </div>
+            </a>
+            <a {% if articles_page.has_next() %}
+               href="{{ SITEURL }}/{{ articles_next_page.url }}"
+               {% else %}
+               class="disabled"
+               {% endif %}>
+                <div>
+                    {{ right_chevron() }}
+                </div>
+                <div  class="button large next">{% trans %}Следующая{% endtrans %}</div>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock content %}

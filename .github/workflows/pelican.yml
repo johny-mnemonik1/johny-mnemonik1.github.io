@@ -1,0 +1,38 @@
+name: Deploy via Pelican on GitHub pages
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  pelican:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements/*') }}
+        restore-keys: ${{ runner.os }}-pip-
+
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/peru
+        key: ${{ runner.os }}-peru-${{ hashFiles('**/peru.yaml/*') }}
+        restore-keys: ${{ runner.os }}-peru-
+
+    - uses: actions/cache@v4
+      with:
+        path: ~/stork
+        key: ${{ runner.os }}-stork
+        restore-keys: ${{ runner.os }}-stork
+
+    - uses: ./.github/actions/gh-pages-pelican-stork-action
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        SOURCE_FOLDER: .
+        PELICAN_CONFIG_FILE: publishconf.py

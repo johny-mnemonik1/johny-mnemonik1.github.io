@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Страница не найдена{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Такой страницы не существует в{% endtrans %} {{ SITENAME|striptags|e }}
+{% endblock head_description %}
+
+{% block content %}
+<div class="section-wrapper error">
+    <div class="section">
+            <h1>{% trans %}Такой страницы не существует!{% endtrans %}</h1>
+            <h2>{% trans %}Увы, запрашиваемая вами страница не найдена. Она либо никогда не существовала, либо была перенесена или удалена.{% endtrans %}</h2>
+    </div>
+</div>
+{% endblock content %}

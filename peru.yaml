@@ -1,0 +1,27 @@
+imports:
+    plugins|i18n_subsites: plugins/
+    plugins|extract_toc: plugins/
+    search|search: plugins/
+    cover|cover: plugins/
+
+
+git module plugins:
+    url: https://github.com/getpelican/pelican-plugins.git
+
+rule i18n_subsites:
+    pick: i18n_subsites
+
+rule extract_toc:
+    pick: extract_toc
+
+git module search:
+    url: https://github.com/pelican-plugins/search.git
+
+rule search:
+    export: pelican/plugins
+
+git module cover:
+    url: https://github.com/marxunion/cover-image.git
+
+rule cover:
+    export: pelican/plugins

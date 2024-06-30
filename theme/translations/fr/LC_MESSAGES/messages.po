@@ -1,0 +1,279 @@
+# French translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-06-30 09:33+0200\n"
+"PO-Revision-Date: 2023-08-02 10:12+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: templates/404.html:4
+msgid "Страница не найдена"
+msgstr ""
+
+#: templates/404.html:8
+msgid "Такой страницы не существует в"
+msgstr ""
+
+#: templates/404.html:14
+msgid "Такой страницы не существует!"
+msgstr ""
+
+#: templates/404.html:15
+msgid ""
+"Увы, запрашиваемая вами страница не найдена. Она либо никогда не "
+"существовала, либо была перенесена или удалена."
+msgstr ""
+
+#: templates/about.html:5 templates/about.html:16 templates/base.html:60
+msgid "О нас"
+msgstr ""
+
+#: templates/about.html:9
+msgid "Курсы от"
+msgstr ""
+
+#: templates/archives.html:4 templates/archives.html:13
+#: templates/archives.html:14 templates/archives.html:29
+msgid "Все статьи"
+msgstr ""
+
+#: templates/archives.html:8 templates/archives.html:16
+#: templates/archives.html:17
+msgid "Все архивы"
+msgstr ""
+
+#: templates/article.html:44 templates/page.html:41
+msgid "Содержание"
+msgstr ""
+
+#: templates/article.html:81
+msgid "Предудущая статья"
+msgstr ""
+
+#: templates/article.html:90
+msgid "Следующая статья"
+msgstr ""
+
+#: templates/article.html:100
+msgid "Опубликовано"
+msgstr ""
+
+#: templates/base.html:56 templates/index.html:33
+msgid "Новости"
+msgstr ""
+
+#: templates/base.html:57 templates/macros.html:13 templates/transition.html:5
+#: templates/transition.html:16
+msgid "Т-переход"
+msgstr ""
+
+#: templates/base.html:58 templates/interviews.html:5
+#: templates/interviews.html:16
+msgid "Интервью и реальные истории"
+msgstr ""
+
+#: templates/base.html:59 templates/help.html:4 templates/macros.html:17
+msgid "Помощь"
+msgstr ""
+
+#: templates/base.html:68
+msgid "Поиск"
+msgstr ""
+
+#: templates/categories.html:4 templates/categories.html:13
+#: templates/categories.html:14 templates/categories.html:33
+msgid "Все категории"
+msgstr ""
+
+#: templates/categories.html:8 templates/categories.html:16
+#: templates/categories.html:17
+msgid "Все категории в"
+msgstr ""
+
+#: templates/help.html:8
+msgid "Заполните эту форму, чтобы получить помощь."
+msgstr ""
+
+#: templates/help.html:14
+msgid "Адресная помощь трансгендерным людям 2024"
+msgstr ""
+
+#: templates/help.html:16
+msgid "Имя"
+msgstr ""
+
+#: templates/help.html:17
+msgid "Емэйл"
+msgstr ""
+
+#: templates/help.html:18
+msgid "Telegram"
+msgstr ""
+
+#: templates/help.html:20
+msgid "Мне необходимо"
+msgstr ""
+
+#: templates/help.html:21
+msgid "Психологическая помощь"
+msgstr ""
+
+#: templates/help.html:22
+msgid "Продудктовый набор"
+msgstr ""
+
+#: templates/help.html:23
+msgid "Компенсация гормональных препаратов"
+msgstr ""
+
+#: templates/help.html:24
+msgid "Другое"
+msgstr ""
+
+#: templates/help.html:26
+msgid "Дополнительная информация"
+msgstr ""
+
+#: templates/help.html:28
+msgid "Отправить"
+msgstr ""
+
+#: templates/help.html:31
+msgid "В данный момент мы принимаем только русскоговорящих членов."
+msgstr ""
+
+#: templates/index.html:71
+msgid "Предыдущая"
+msgstr ""
+
+#: templates/index.html:84
+msgid "Следующая"
+msgstr ""
+
+#: templates/interviews.html:9
+msgid "Кампании"
+msgstr ""
+
+#: templates/join_error.html:4 templates/join_fail.html:4
+#: templates/join_success.html:4
+msgid "Вступить"
+msgstr ""
+
+#: templates/join_error.html:8 templates/join_fail.html:8
+msgid "Не удалось отправить заявку на вступление в Союз марксистов..."
+msgstr ""
+
+#: templates/join_error.html:14
+msgid ""
+"По какой-то причине отправить вашу заявку в Союз марксистов не удалось. "
+"Скорее всего, это связано с внутренними проблемами в системах СМ, и "
+"ответственные люди уже об этом знают. Пожалуйста, попробуйте заполнить "
+"форму снова через некоторое время."
+msgstr ""
+
+#: templates/join_error.html:15
+msgid "А пока можно вернуться на"
+msgstr ""
+
+#: templates/join_error.html:15
+msgid "главную страницу"
+msgstr ""
+
+#: templates/join_fail.html:14
+msgid "Я не знаю, как, но тебе удалось заполнить форму неправильно."
+msgstr ""
+
+#: templates/join_fail.html:15
+msgid "Попробуй еще раз"
+msgstr ""
+
+#: templates/join_success.html:8
+msgid "Заявка на вступление в Союз марксистов успешно отправлена!"
+msgstr ""
+
+#: templates/join_success.html:14
+msgid ""
+"Поздравляем, заявка успешно отправлена! В течение недели через Telegram с"
+" тобой свяжутся представители Союза марксистов."
+msgstr ""
+
+#: templates/join_success.html:15
+msgid "А до тех пор настоятельно рекомендуем ознакомиться с"
+msgstr ""
+
+#: templates/join_success.html:15
+msgid "уставными документами организации"
+msgstr ""
+
+#: templates/join_success.html:15
+msgid "(это все равно придется сделать)"
+msgstr ""
+
+#: templates/macros.html:3
+msgid "Переводы"
+msgstr ""
+
+#: templates/macros.html:15
+msgid "Интервью"
+msgstr ""
+
+#: templates/tags.html:4 templates/tags.html:13 templates/tags.html:14
+msgid "Все теги"
+msgstr ""
+
+#: templates/tags.html:8 templates/tags.html:16 templates/tags.html:17
+msgid "Все теги, используемые в"
+msgstr ""
+
+#: templates/transition.html:9
+msgid "Уставные документы"
+msgstr ""
+
+#~ msgid "Документы"
+#~ msgstr ""
+
+#~ msgid "Курсы"
+#~ msgstr ""
+
+#~ msgid "Заполните эту форму, чтобы присоединиться к Союзу марксистов!"
+#~ msgstr ""
+
+#~ msgid "Как нам к тебе обращаться?"
+#~ msgstr ""
+
+#~ msgid "Гендер"
+#~ msgstr ""
+
+#~ msgid "Не указывать"
+#~ msgstr ""
+
+#~ msgid "Женский"
+#~ msgstr ""
+
+#~ msgid "Мужской"
+#~ msgstr ""
+
+#~ msgid "Возраст"
+#~ msgstr ""
+
+#~ msgid "Номер телефона"
+#~ msgstr ""
+
+#~ msgid "Имя в Telegram"
+#~ msgstr ""
+
+#~ msgid "Город (+ страна, если это не РФ)"
+#~ msgstr ""
+

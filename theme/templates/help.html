@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% trans %}Помощь{% endtrans %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% trans %}Заполните эту форму, чтобы получить помощь.{% endtrans %}
+{% endblock head_description %}
+
+{% block content %}
+<div class="join-form-wrapper">
+    {% if DEFAULT_LANG == 'ru' %}
+    <h1>{% trans %}Адресная помощь трансгендерным людям 2024{% endtrans %}</h1>
+    <form action="https://wwww.tbelarus.com/">
+        <input class="join-form-input" type="text" id="name" name="name" required placeholder="{% trans %}Имя{% endtrans %}">
+        <input class="join-form-input" type="text" id="email" name="email" required placeholder="{% trans %}Емэйл{% endtrans %}">
+        <input class="join-form-input" type="text" id="telegram" name="telegram" required placeholder="{% trans %}Telegram{% endtrans %}">
+        <select class="join-form-input" id="gender" name="gender" required>
+            <option value="" disabled selected>{% trans %}Мне необходимо{% endtrans %}</option>
+            <option value="психологическая-помощь">{% trans %}Психологическая помощь{% endtrans %}</option>
+            <option value="продудктовый набор">{% trans %}Продудктовый набор{% endtrans %}</option>
+            <option value="компенсация гормональных препаратов">{% trans %}Компенсация гормональных препаратов{% endtrans %}</option>
+            <option value="другое">{% trans %}Другое{% endtrans %}</option>
+        </select>
+        <textarea id="additional-info" name="additional-info" rows="4" cols="50" placeholder="{% trans %}Дополнительная информация{% endtrans %}">
+            </textarea>
+        <input type="submit" value="{% trans %}Отправить{% endtrans %}">
+    </form>
+    {% else %}
+    <p>{% trans %}В данный момент мы принимаем только русскоговорящих членов.{% endtrans %}</p>
+    {% endif %}
+</div>
+{% endblock content %}
